@@ -4,6 +4,7 @@ import { LookupService } from '../types/Parser'
 export interface GenericLookupAdapterObject {
     id: number
     descriptor: string
+    name: string
 }
 
 /**
@@ -48,6 +49,6 @@ export class GenericLookupAdapter implements LookupService {
     public divisionForId (id: number): string | undefined {
         return this.divisions.find(
             d => d.id === id
-        )?.descriptor
+        )?.name
     }
 }

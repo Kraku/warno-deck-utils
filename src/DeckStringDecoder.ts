@@ -33,7 +33,7 @@ export function deckFromParser (results: DeckParserResults, lookup?: LookupServi
 
     const division = {
         id: divisionValue,
-        descriptor: lookup?.divisionForId(divisionValue)
+        name: lookup?.divisionForId(divisionValue)
     }
 
     const numberOfCardsField = results.headers.numberOfCards

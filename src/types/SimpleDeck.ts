@@ -2,6 +2,7 @@
 export interface IdDescriptorPair {
     id: number
     descriptor?: string
+    name?: string
 }
 
 /// Basic interface describing a unit pack
